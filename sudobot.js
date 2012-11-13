@@ -5,7 +5,7 @@ var client = new irc.Client('chat.freenode.net', 'Sudobot', {
 
 client.addListener('message', function(from, to, message) {
 
-	if(message.indexOf('yar') > -1) {
+	if(message.indexOf('yarr') > -1) {
 		client.say(to, 'Arrr Matey!');
 	}
 });
